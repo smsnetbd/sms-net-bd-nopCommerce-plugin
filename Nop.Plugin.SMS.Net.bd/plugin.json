@@ -1,0 +1,13 @@
+{
+  "Group": "SMS providers",
+  "FriendlyName": "sms.net.bd",
+  "SystemName": "Mobile.sms.net.bd",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "sms.net.bd team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.SMS.Net.bd.dll",
+  "Description": "Sms.net.bd supports notifications about updates to your account or confirmations of payments or changes that are sent to you by text message",
+  "LimitedToStores": [],
+  "LimitedToCustomerRoles": []
+}
