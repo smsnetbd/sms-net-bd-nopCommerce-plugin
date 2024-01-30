@@ -10,13 +10,13 @@ namespace Nop.Plugin.SMS.Net.bd
 {
     public class OrderPlacedEventConsumer : IConsumer<OrderPlacedEvent>
     {
-        private readonly AlphaSMSSettings _AlphaSettings;
+        private readonly SmsNetBdSettings _AlphaSettings;
         private readonly IPluginService _pluginFinder;
         private readonly IOrderService _orderService;
         private readonly IStoreContext _storeContext;
         private readonly ICustomerService _customerService;
 
-        public OrderPlacedEventConsumer(ICustomerService customerService, AlphaSMSSettings AlphaSettings,
+        public OrderPlacedEventConsumer(ICustomerService customerService, SmsNetBdSettings AlphaSettings,
             IPluginService pluginFinder,
             IOrderService orderService,
             IStoreContext storeContext)
@@ -44,7 +44,7 @@ namespace Nop.Plugin.SMS.Net.bd
             //if (!_pluginFinder.AuthenticateStore(pluginDescriptor, _storeContext.CurrentStore.Id))
             //    return;
 
-            var plugin = pluginDescriptor.Instance<IPlugin>() as AlphaSmsProvider;
+            var plugin = pluginDescriptor.Instance<IPlugin>() as SmsNetBdProvider;
             if (plugin == null)
                 return;
 

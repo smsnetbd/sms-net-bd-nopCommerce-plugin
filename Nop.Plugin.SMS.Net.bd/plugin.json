@@ -7,7 +7,7 @@
   "Author": "sms.net.bd team",
   "DisplayOrder": 1,
   "FileName": "Nop.Plugin.SMS.Net.bd.dll",
-  "Description": "Sms.net.bd supports notifications about updates to your account or confirmations of payments or changes that are sent to you by text message",
+  "Description": "sms.net.bd supports notifications about updates to your account or confirmations of payments or changes that are sent to you by text message",
   "LimitedToStores": [],
   "LimitedToCustomerRoles": []
 }

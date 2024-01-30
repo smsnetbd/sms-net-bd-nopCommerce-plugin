@@ -1,6 +1,6 @@
 ﻿namespace Nop.Plugin.Sms.Net.bd.Models
 {
-    public class SmsAlphaModel
+    public class SmsNetBdModel
     {
         // [NopResourceDisplayName("Plugins.Sms.Alpha.Fields.Enabled")]
         public bool Enabled { get; set; }

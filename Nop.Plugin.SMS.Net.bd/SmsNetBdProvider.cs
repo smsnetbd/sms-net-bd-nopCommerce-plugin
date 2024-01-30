@@ -16,7 +16,7 @@ namespace Nop.Plugin.SMS.Net.bd
     /// <summary>
     /// Represents the Alpha SMS provider
     /// </summary>
-    public class AlphaSmsProvider : BasePlugin, IMiscPlugin
+    public class SmsNetBdProvider : BasePlugin, IMiscPlugin
     {
         private readonly IEmailAccountService _emailAccountService;
         private readonly ILocalizationService _localizationService;
@@ -26,9 +26,9 @@ namespace Nop.Plugin.SMS.Net.bd
         private readonly IStoreContext _storeContext;
         private readonly IWebHelper _webHelper;
         private readonly EmailAccountSettings _emailAccountSettings;
-        private readonly AlphaSMSSettings _AlphaSMSSettings;
+        private readonly SmsNetBdSettings _AlphaSMSSettings;
 
-        public AlphaSmsProvider(IEmailAccountService emailAccountService,
+        public SmsNetBdProvider(IEmailAccountService emailAccountService,
             ILocalizationService localizationService,
             ILogger logger,
             IQueuedEmailService queuedEmailService,
@@ -36,7 +36,7 @@ namespace Nop.Plugin.SMS.Net.bd
             IStoreContext storeContext,
             IWebHelper webHelper,
             EmailAccountSettings emailAccountSettings,
-            AlphaSMSSettings AlphaSMSSettings)
+            SmsNetBdSettings AlphaSMSSettings)
         {
             this._emailAccountService = emailAccountService;
             this._localizationService = localizationService;
@@ -107,7 +107,7 @@ namespace Nop.Plugin.SMS.Net.bd
         public override void Install()
         {
             //settings
-            var settings = new AlphaSMSSettings
+            var settings = new SmsNetBdSettings
             {
                 API_Url = "https://api.sms.net.bd/sendsms?",
                 Enabled = true,
@@ -142,7 +142,7 @@ namespace Nop.Plugin.SMS.Net.bd
         public override void Uninstall()
         {
             //settings
-            _settingService.DeleteSetting<AlphaSMSSettings>();
+            _settingService.DeleteSetting<SmsNetBdSettings>();
 
             //locales
             //_localizationService.DeletePluginLocaleResource("Plugins.Sms.Alpha.TestFailed");

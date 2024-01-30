@@ -2,7 +2,7 @@
 
 namespace Nop.Plugin.SMS.Net.bd
 {
-    public class AlphaSMSSettings : ISettings
+    public class SmsNetBdSettings : ISettings
     {
         /// <summary>
         /// Gets or sets the value indicting whether this SMS provider is enabled

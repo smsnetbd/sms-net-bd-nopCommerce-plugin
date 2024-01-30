@@ -21,7 +21,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
         private readonly IPermissionService _permissionService;
         private readonly IPluginService _pluginFinder;
         private readonly ISettingService _settingService;
-        private readonly AlphaSMSSettings _AlphaSettings;
+        private readonly SmsNetBdSettings _AlphaSettings;
         private readonly INotificationService _notificationService;
 
         public SmsAlphaController(ILocalizationService localizationService,
@@ -29,7 +29,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
             IPluginService pluginFinder,
             ISettingService settingService,
             INotificationService notificationService,
-            AlphaSMSSettings AlphaSettings)
+            SmsNetBdSettings AlphaSettings)
         {
             this._localizationService = localizationService;
             this._permissionService = permissionService;
@@ -45,7 +45,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
             if (!_permissionService.Authorize(StandardPermissionProvider.ManagePlugins))
                 return AccessDeniedView();
 
-            var model = new SmsAlphaModel
+            var model = new SmsNetBdModel
             {
                 Enabled = _AlphaSettings.Enabled,
                 Email = _AlphaSettings.Email,
@@ -84,7 +84,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
 
         [HttpPost, ActionName("Configure")]
         [FormValueRequired("save")]
-        public IActionResult ConfigurePOST(SmsAlphaModel model)
+        public IActionResult ConfigurePOST(SmsNetBdModel model)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManagePlugins))
                 return AccessDeniedView();
@@ -136,7 +136,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
 
         [HttpPost, ActionName("Configure")]
         [FormValueRequired("test-sms")]
-        public IActionResult TestSms(SmsAlphaModel model)
+        public IActionResult TestSms(SmsNetBdModel model)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManagePlugins))
                 return AccessDeniedView();
@@ -154,7 +154,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
                     //_pluginFinder.GetPluginDescriptorBySystemName("Mobile.SMS.Alpha");
                     if (pluginDescriptor == null)
                         throw new Exception("Cannot load the plugin");
-                    var plugin = pluginDescriptor.Instance<IPlugin>() as AlphaSmsProvider;
+                    var plugin = pluginDescriptor.Instance<IPlugin>() as SmsNetBdProvider;
                     if (plugin == null)
                         throw new Exception("Cannot load the plugin");
 
