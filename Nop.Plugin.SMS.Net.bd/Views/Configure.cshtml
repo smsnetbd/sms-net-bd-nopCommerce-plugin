@@ -3,14 +3,14 @@
 
     //Html.AddCssFileParts("~/Plugins/SMS.Messaging/Content/styles.css");
 }
-@model SmsAlphaModel
+@model SmsNetBdModel
 @using Nop.Core.Infrastructure
 @using Nop.Plugin.Sms.Net.bd.Models;
 @using Nop.Web.Framework;
 @using Nop.Web.Framework.UI;
 @inject Nop.Core.Domain.Common.AdminAreaSettings adminAreaSettings
 
-<form asp-controller="SmsAlpha" asp-action="Configure" method="post">
+<form asp-controller="SmsNetBd" asp-action="Configure" method="post">
     <div class="panel-group">
         <div class="panel panel-default">
             <div class="panel-body">
@@ -167,6 +167,25 @@
                     </div>
                     </div>
                     <hr />*@
+                @* <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EnabledRegistered" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnabledRegistered" />
+                        <span asp-validation-for="EnabledRegistered"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="RegisteredSMSFormat" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="RegisteredSMSFormat" />
+                        <span asp-validation-for="RegisteredSMSFormat"></span>
+                    </div>
+                </div> *@
                 <div class="form-group">
                     <div class="col-md-3">
                         <nop-label asp-for="EnabledConfirmOrder" />
@@ -192,6 +211,7 @@
                     <div class="col-md-9">
                         <nop-editor asp-for="ConfirmOrderSMSForCustomerFormat" />
                         <span asp-validation-for="ConfirmOrderSMSForCustomerFormat"></span>
+                        <span class="help-block"> %[ID]% | %[StoreName]% | %[OwnerPhoneNumber]% | %[CustomerPhoneNumber]% | %[CustomerFirstName]% | %[OrderTotal]% </span>
                     </div>
                 </div>
                 <div class="form-group">
@@ -210,6 +230,88 @@
                     <div class="col-md-9">
                         <nop-editor asp-for="ConfirmOrderSMSForOwnerFormat" />
                         <span asp-validation-for="ConfirmOrderSMSForOwnerFormat"></span>
+                        <span class="help-block"> %[ID]% | %[StoreName]% | %[OwnerPhoneNumber]% | %[CustomerPhoneNumber]% | %[CustomerFirstName]% | %[OrderTotal]% </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EnableOrderPaid" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnableOrderPaid" />
+                        <span asp-validation-for="EnableOrderPaid"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="OrderPaidSMSFormat" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="OrderPaidSMSFormat" />
+                        <span asp-validation-for="OrderPaidSMSFormat"></span>
+                        <span class="help-block"> %[ID]% | %[StoreName]% | %[OwnerPhoneNumber]% | %[CustomerPhoneNumber]% | %[CustomerFirstName]% | %[OrderTotal]% </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EnabledOrderCanceled" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnabledOrderCanceled" />
+                        <span asp-validation-for="EnabledOrderCanceled"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="OrderCanceledSMSFormat" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="OrderCanceledSMSFormat" />
+                        <span asp-validation-for="OrderCanceledSMSFormat"></span>
+                        <span class="help-block"> %[ID]% | %[StoreName]% | %[OwnerPhoneNumber]% | %[CustomerPhoneNumber]% | %[CustomerFirstName]% | %[OrderTotal]% </span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EnableOrderRefunded" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnableOrderRefunded" />
+                        <span asp-validation-for="EnableOrderRefunded"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="OrderRefundedSMSFormat" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="OrderRefundedSMSFormat" />
+                        <span asp-validation-for="OrderRefundedSMSFormat"></span>
+                        <span class="help-block"> %[ID]% | %[StoreName]% | %[OwnerPhoneNumber]% | %[CustomerPhoneNumber]% | %[CustomerFirstName]% | %[OrderTotal]% </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EnabledOrderShipping" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnabledOrderShipping" />
+                        <span asp-validation-for="EnabledOrderShipping"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="OrderShippingSMSFormat" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="OrderShippingSMSFormat" />
+                        <span asp-validation-for="OrderShippingSMSFormat"></span>
+                        <span class="help-block"> %[ID]% | %[StoreName]% | %[OwnerPhoneNumber]% | %[CustomerPhoneNumber]% | %[CustomerFirstName]% | %[OrderTotal]% | %[ShippingStatus]% </span>
                     </div>
                 </div>
                 <hr />
@@ -282,7 +384,6 @@
                     <span asp-validation-for="EnabledOrderCanceled"></span>
                     </div>
                     </div>*@
-
 
                 <div class="form-group">
                     <div class="col-md-3">

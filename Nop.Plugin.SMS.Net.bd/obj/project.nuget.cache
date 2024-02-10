@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x77eiebseHJEfabMu+RGInr7elJ4KqUkYuQoz/vUSH0qkybRtlweVzgLBUEJqNj57CWeNph/5DAdBw61cNG2YA==",
+  "dgSpecHash": "ucJTB6wF/IauPTMrZe3gdYMspsmJtc+LbuI/g7BSo/M6jOYXnddj3FrsfYQikRcZOR7dMaO10nlbjNUozRs/tg==",
   "success": true,
-  "projectFilePath": "C:\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj",
+  "projectFilePath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
@@ -280,8 +280,7 @@
     "C:\\Users\\user\\.nuget\\packages\\webmarkupmin.aspnetcore3\\2.8.2\\webmarkupmin.aspnetcore3.2.8.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\webmarkupmin.core\\2.8.1\\webmarkupmin.core.2.8.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\webmarkupmin.nuglify\\2.8.1\\webmarkupmin.nuglify.2.8.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []
 }

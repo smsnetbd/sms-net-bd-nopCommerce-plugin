@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj": {}
+    "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj": {}
   },
   "projects": {
-    "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+    "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
       "version": "4.3.0",
       "restore": {
-        "projectUniqueName": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectUniqueName": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "projectName": "Nop.Core",
-        "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\obj\\",
+        "outputPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,12 +100,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -115,14 +109,14 @@
         }
       }
     },
-    "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+    "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj": {
       "version": "4.3.0",
       "restore": {
-        "projectUniqueName": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectUniqueName": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "projectName": "Nop.Data",
-        "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\obj\\",
+        "outputPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -139,8 +133,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj"
               }
             }
           }
@@ -187,12 +181,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -202,14 +190,14 @@
         }
       }
     },
-    "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+    "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj": {
       "version": "4.3.0",
       "restore": {
-        "projectUniqueName": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectUniqueName": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "projectName": "Nop.Services",
-        "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\obj\\",
+        "outputPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +214,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj"
               }
             }
           }
@@ -289,12 +277,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -304,14 +286,14 @@
         }
       }
     },
-    "C:\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj": {
+    "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj",
+        "projectUniqueName": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj",
         "projectName": "Nop.Plugin.SMS.Net.bd",
-        "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj",
+        "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\Nop.Plugin.SMS.Net.bd.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\obj\\",
+        "outputPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Plugins\\Nop.Plugin.SMS.Net.bd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -328,8 +310,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
               }
             }
           }
@@ -354,12 +336,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -369,14 +345,14 @@
         }
       }
     },
-    "C:\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+    "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
       "version": "4.3.0",
       "restore": {
-        "projectUniqueName": "C:\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectUniqueName": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "projectName": "Nop.Web.Framework",
-        "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\obj\\",
+        "outputPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Presentation\\Nop.Web.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -393,14 +369,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "C:\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "C:\\(Office)-Work\\BackUp\\PUP_Nopcommerce_bd\\trunk\\Libraries\\Nop.Services\\Nop.Services.csproj"
               }
             }
           }
@@ -443,12 +419,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

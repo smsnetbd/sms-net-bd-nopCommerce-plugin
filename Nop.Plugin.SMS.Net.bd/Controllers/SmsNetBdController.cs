@@ -15,7 +15,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
 {
     [AuthorizeAdmin]
     [Area(AreaNames.Admin)]
-    public class SmsAlphaController : BasePluginController
+    public class SmsNetBdController : BasePluginController
     {
         private readonly ILocalizationService _localizationService;
         private readonly IPermissionService _permissionService;
@@ -24,7 +24,7 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
         private readonly SmsNetBdSettings _AlphaSettings;
         private readonly INotificationService _notificationService;
 
-        public SmsAlphaController(ILocalizationService localizationService,
+        public SmsNetBdController(ILocalizationService localizationService,
             IPermissionService permissionService,
             IPluginService pluginFinder,
             ISettingService settingService,
@@ -50,14 +50,15 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
                 Enabled = _AlphaSettings.Enabled,
                 Email = _AlphaSettings.Email,
                 API_Key = _AlphaSettings.API_Key,
-                API_Url = _AlphaSettings.API_Url,
-                //   ConfirmOrderSMSFormat = _AlphaSettings.ConfirmOrderSMSFormat,
+                API_Url = _AlphaSettings.API_Url==null? "https://api.sms.net.bd/sendsms?":_AlphaSettings.API_Url,
+                //ConfirmOrderSMSFormat = _AlphaSettings.ConfirmOrderSMSFormat,
                 EnabledConfirmOrder = _AlphaSettings.EnabledConfirmOrder,
                 EnabledOrderCanceled = _AlphaSettings.EnabledOrderCanceled,
                 EnabledOrderCompleted = _AlphaSettings.EnabledOrderCompleted,
                 EnabledOrderShipping = _AlphaSettings.EnabledOrderShipping,
                 EnabledPaymented = _AlphaSettings.EnabledPaymented,
                 EnabledRegistered = _AlphaSettings.EnabledRegistered,
+                EnableOrderPaid = _AlphaSettings.EnableOrderPaid,
                 OrderCanceledSMSFormat = _AlphaSettings.OrderCanceledSMSFormat,
                 OrderCompletedSMSFormat = _AlphaSettings.OrderCompletedSMSFormat,
                 OrderShippingSMSFormat = _AlphaSettings.OrderShippingSMSFormat,
@@ -74,9 +75,10 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
                 SendToOwnerAccRegSMSEnabled = _AlphaSettings.SendToOwnerAccRegSMSEnabled,
                 SendToCustomerAccRegSMSEnabled = _AlphaSettings.SendToCustomerAccRegSMSEnabled,
                 ConfirmOrderSMSForOwnerFormat = _AlphaSettings.ConfirmOrderSMSForOwnerFormat,
-                ConfirmOrderSMSForCustomerFormat = _AlphaSettings.ConfirmOrderSMSForCustomerFormat
-
-
+                ConfirmOrderSMSForCustomerFormat = _AlphaSettings.ConfirmOrderSMSForCustomerFormat,
+                EnableOrderRefunded = _AlphaSettings.EnableOrderRefunded,
+                OrderRefundedSMSFormat = _AlphaSettings.OrderRefundedSMSFormat,
+                OrderPaidSMSFormat = _AlphaSettings.OrderPaidSMSFormat,
             };
 
             return View("~/Plugins/SMS.Net.bd/Views/Configure.cshtml", model);
@@ -120,12 +122,16 @@ namespace Nop.Plugin.Sms.Net.bd.Controllers
             _AlphaSettings.EnabledOrderShipping = model.EnabledOrderShipping;
             _AlphaSettings.EnabledPaymented = model.EnabledPaymented;
             _AlphaSettings.EnabledRegistered = model.EnabledRegistered;
+            _AlphaSettings.EnableOrderRefunded = model.EnableOrderRefunded;
+            _AlphaSettings.EnableOrderPaid = model.EnableOrderPaid;
             _AlphaSettings.OrderCompletedSMSFormat = model.OrderCompletedSMSFormat;
             _AlphaSettings.OrderShippingSMSFormat = model.OrderShippingSMSFormat;
             _AlphaSettings.PaymentedSMSFormat = model.PaymentedSMSFormat;
             _AlphaSettings.RegisteredSMSFormat = model.RegisteredSMSFormat;
             _AlphaSettings.ConfirmOrderSMSForCustomerFormat = model.ConfirmOrderSMSForCustomerFormat;
             _AlphaSettings.ConfirmOrderSMSForOwnerFormat = model.ConfirmOrderSMSForOwnerFormat;
+            _AlphaSettings.OrderRefundedSMSFormat = model.OrderRefundedSMSFormat;
+            _AlphaSettings.OrderPaidSMSFormat = model.OrderPaidSMSFormat;
             _settingService.SaveSetting(_AlphaSettings);
 
             // SuccessNotification(_localizationService.GetResource("Admin.Plugins.Saved"));

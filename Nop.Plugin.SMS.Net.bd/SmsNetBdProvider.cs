@@ -98,7 +98,7 @@ namespace Nop.Plugin.SMS.Net.bd
 
         public override string GetConfigurationPageUrl()
         {
-            return $"{_webHelper.GetStoreLocation()}Admin/SmsAlpha/Configure";
+            return $"{_webHelper.GetStoreLocation()}Admin/SmsNetBd/Configure";
         }
 
         /// <summary>

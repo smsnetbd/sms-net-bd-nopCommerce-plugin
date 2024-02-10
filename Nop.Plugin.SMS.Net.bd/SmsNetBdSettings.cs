@@ -1,4 +1,5 @@
 ﻿using Nop.Core.Configuration;
+using System.ComponentModel;
 
 namespace Nop.Plugin.SMS.Net.bd
 {
@@ -58,5 +59,11 @@ namespace Nop.Plugin.SMS.Net.bd
         //Canceled
         public bool EnabledOrderCanceled { get; set; }
         public string OrderCanceledSMSFormat { get; set; }
+        public bool EnableOrderRefunded { get; set; }
+        public string OrderRefundedSMSFormat { get; set; }
+        public bool EnableOrderPaid { get; set; }
+        public string OrderPaidSMSFormat { get; set; }
+
+
     }
 }
